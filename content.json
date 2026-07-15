@@ -1,1 +1,26 @@
-{"pages":[{"title":"404","text":"","link":"/404.html"}],"posts":[{"title":"Hello World","text":"Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new &quot;My New Post&quot; More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment","link":"/2021/08/23/hello-world/"}],"tags":[],"categories":[]}
+{
+  "pages": [
+    {
+      "title": "404",
+      "text": "",
+      "link": "/404.html"
+    }
+  ],
+  "posts": [
+    {
+      "title": "AI助手 Codex 完全使用指南：从入门到高效开发",
+      "text": "Codex 是 OpenAI 推出的基于 GPT-4 代码理解能力的 AI 编程助手，帮助您从基础到高级全面掌握使用方法。",
+      "link": "/2026/07/14/codex-usage-guide/",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "title": "Hello World",
+      "text": "Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new &quot;My New Post&quot; More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment",
+      "link": "/2021/08/23/hello-world/"
+    }
+  ],
+  "tags": [],
+  "categories": []
+}
