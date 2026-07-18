@@ -8,6 +8,14 @@
   ],
   "posts": [
     {
+      "title": "OpenAI 使用指南：从 API 入门到最佳实践",
+      "text": "一篇面向开发者的 OpenAI 使用指南，介绍 Responses API、模型选择、提示词、工具调用、结构化输出和安全成本控制。",
+      "link": "/2026/07/18/openai-api-usage-guide/",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
       "title": "AI助手 Codex 完全使用指南：从入门到高效开发",
       "text": "Codex 是 OpenAI 推出的基于 GPT-4 代码理解能力的 AI 编程助手，帮助您从基础到高级全面掌握使用方法。",
       "link": "/2026/07/14/codex-usage-guide/",
