@@ -10,7 +10,7 @@ layout: default
       {% if page.categories.size > 0 %}
         <span class="dot">·</span>
         <span class="post-cats">
-          {% for c in page.categories %}<span class="tag">{{ c }}</span>{% endfor %}
+          {% for c in page.categories %}<a class="tag" href="{{ '/categories/' | append: c | append: '/' | relative_url }}">{{ c }}</a>{% endfor %}
         </span>
       {% endif %}
     </div>

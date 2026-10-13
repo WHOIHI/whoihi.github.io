@@ -12,7 +12,7 @@
       <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: '%Y-%m-%d' }}</time>
       {% if include.post.categories.size > 0 %}
         <span class="dot">·</span>
-        {% for c in include.post.categories %}<span class="tag">{{ c }}</span>{% endfor %}
+        {% for c in include.post.categories %}<a class="tag" href="{{ '/categories/' | append: c | append: '/' | relative_url }}">{{ c }}</a>{% endfor %}
       {% endif %}
     </div>
   </div>

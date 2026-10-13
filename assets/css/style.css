@@ -526,6 +526,93 @@ hr {
 
 .back-link { margin-top: 36px; font-size: .92rem; }
 
+/* ---------- 分类页 ---------- */
+.classify-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 40px;
+}
+
+.tag-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 15px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-soft);
+  font-size: .89rem;
+  font-weight: 500;
+  transition: border-color .18s, color .18s, background .18s;
+}
+.tag-filter:hover { border-color: var(--accent); color: var(--accent); }
+.tag-filter.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.tag-filter .count {
+  font-size: .74rem;
+  font-weight: 600;
+  padding: 0 7px;
+  border-radius: 999px;
+  background: var(--bg-soft);
+  color: var(--text-soft);
+}
+.tag-filter.active .count { background: rgba(255, 255, 255, .24); color: #fff; }
+
+.classify-section { margin-bottom: 38px; }
+
+.classify-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-soft);
+  font-family: var(--font-serif);
+  font-size: 1.28rem;
+}
+.classify-title a { color: var(--text); }
+.classify-title a:hover { color: var(--accent); }
+.classify-title .count {
+  font-family: var(--font-sans);
+  font-size: .74rem;
+  font-weight: 600;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-deep);
+}
+
+.classify-list { list-style: none; margin: 0; padding: 0; }
+
+.classify-item {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--border-soft);
+}
+.classify-item:last-child { border-bottom: none; }
+
+.classify-item time {
+  flex: none;
+  width: 88px;
+  color: var(--text-mute);
+  font-size: .85rem;
+  font-variant-numeric: tabular-nums;
+}
+.classify-link { color: var(--text); font-weight: 500; }
+.classify-link:hover { color: var(--accent); }
+
+.classify-badges { display: inline-flex; flex-wrap: wrap; gap: 6px; margin-left: auto; }
+
+.classify-list-single .classify-item { padding: 12px 0; }
+
 /* ---------- 头像 ---------- */
 .about-avatar {
   width: 96px;
