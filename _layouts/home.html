@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<section class="hero">
+  <p class="hero-eyebrow">{{ site.tagline }}</p>
+  <h1 class="hero-title">{{ site.title }}</h1>
+  <p class="hero-desc">{{ site.description | strip_newlines }}</p>
+</section>
+
+<section class="post-list">
+  <h2 class="section-title">最新文章</h2>
+
+  {% for post in paginator.posts %}
+    {% include post-card.html post=post %}
+  {% else %}
+    {% for post in site.posts %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+  {% endfor %}
+</section>
+
+{% if paginator and paginator.total_pages > 1 %}
+<nav class="pagination">
+  {% if paginator.previous_page %}
+    <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">← 上一页</a>
+  {% else %}
+    <span class="page-link disabled">← 上一页</span>
+  {% endif %}
+
+  <span class="page-info">第 {{ paginator.page }} / {{ paginator.total_pages }} 页</span>
+
+  {% if paginator.next_page %}
+    <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">下一页 →</a>
+  {% else %}
+    <span class="page-link disabled">下一页 →</span>
+  {% endif %}
+</nav>
+{% endif %}

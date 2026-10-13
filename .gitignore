@@ -1,0 +1,20 @@
+# Jekyll 构建产物
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# 依赖
+vendor/
+.bundle/
+Gemfile.lock
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# WorkBuddy 工作目录
+.workbuddy-ai/

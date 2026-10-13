@@ -1,0 +1,90 @@
+# ===== 站点基本配置 =====
+title: Close the door and see the scenery
+tagline: Krobelus 的博客
+description: >-
+  Close the door and see the scenery —— 记录技术、AI 与日常的思考。
+author: Krobelus
+lang: zh-CN
+
+# ===== 语言与编码 =====
+timezone: Asia/Shanghai
+encoding: utf-8
+
+# ===== URL 配置 =====
+# 自定义域名(仓库中的 CNAME 文件也指向该域名)
+url: "https://1985891.xyz"
+baseurl: ""
+
+# 永久链接格式(与旧站保持一致,迁移后的文章 URL 不变)
+permalink: /:year/:month/:day/:title/
+
+# ===== 构建配置 =====
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+
+# 分页(需要 jekyll-paginate 插件)
+paginate: 5
+paginate_path: "/page:num/"
+
+# ===== 插件 =====
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# ===== 集合 =====
+collections:
+  notes:
+    output: true
+    permalink: /notes/:title/
+
+# ===== 默认值 =====
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: page
+
+# ===== 导航菜单 =====
+nav:
+  - title: 首页
+    url: /
+  - title: 归档
+    url: /archives/
+  - title: 标签
+    url: /tags/
+  - title: 关于
+    url: /about/
+
+# ===== 社交链接(留空则不显示)=====
+social:
+  github: https://github.com/WHOIHI
+  email: ""
+
+# ===== 排除文件 =====
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .workbuddy-ai
+  - node_modules
+  - README.md
