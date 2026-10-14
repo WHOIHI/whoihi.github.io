@@ -51,9 +51,6 @@ jobs:
           JEKYLL_ENV: "production"
 
       - name: Test site
-        # 链接检查为非致命步骤:站点含中文分类/标签 URL,若 html-proofer 产生误报
-        # 不应挡住部署。日志里仍会给出结果,确认无误后可删掉这行。
-        continue-on-error: true
         run: |
           bundle exec htmlproofer _site \
             \-\-disable-external \
