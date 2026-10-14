@@ -1,13 +1,10 @@
 ---
-layout: page
-title: 关于
-subtitle: 关于这个站点,以及写它的人
-permalink: /about/
+# the default layout is 'page'
+icon: fas fa-info-circle
+order: 4
 ---
 
 ## 你好,我是 Krobelus 👋
-
-<img class="about-avatar" src="{{ '/assets/img/avatar.png' | relative_url }}" alt="Krobelus 的头像" width="96" height="96">
 
 这里是我的个人博客 —— **Close the door and see the scenery**。
 
@@ -15,21 +12,11 @@ permalink: /about/
 
 ### 关于这个站点
 
-站点用 [Jekyll](https://jekyllrb.com/) 搭建,内容用 Markdown 书写,托管在 GitHub Pages 上。
+用 [Jekyll](https://jekyllrb.com/) 配合 [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) 主题搭建,内容以 Markdown 书写,托管在 GitHub Pages 上,由 GitHub Actions 自动构建部署。
 
 - **快** —— 纯静态文件,没有数据库查询
 - **简单** —— 一个 Markdown 文件就是一篇文章
 - **可版本控制** —— 每一篇文章都在 Git 里
-
-### 技术栈
-
-| 组件 | 说明 |
-| --- | --- |
-| 引擎 | Jekyll 4 |
-| 模板 | Liquid |
-| 样式 | 手写 CSS(无框架依赖) |
-| 语法高亮 | Rouge |
-| 部署 | GitHub Actions → GitHub Pages |
 
 ### 找到我
 
