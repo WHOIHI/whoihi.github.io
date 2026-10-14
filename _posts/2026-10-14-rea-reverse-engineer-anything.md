@@ -1,7 +1,7 @@
 ---
 title: "REA 深度拆解：让 AI 智能体逆向二进制、应用与运行时行为的 MCP 项目"
 date: 2026-10-14 10:30:00 +0800
-categories: [技术]
+categories: [技术, 逆向工程]
 tags: [逆向工程, AI, MCP, 开源]
 description: 半年涨到 21 万 star，211 位贡献者、近 3000 次提交。REA 用一个 MCP 服务把智能体接到 Hopper、Ghidra、IDA 上，让它去回答"这个功能到底是怎么实现的"。
 toc: true

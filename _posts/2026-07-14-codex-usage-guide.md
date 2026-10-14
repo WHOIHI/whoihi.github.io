@@ -2,7 +2,7 @@
 layout: post
 title: "AI助手 Codex 完全使用指南：从入门到高效开发"
 date: 2026-07-14 12:00:00 +0800
-categories: [技术]
+categories: [技术, AI]
 tags: [AI]
 description: Codex 是 OpenAI 推出的基于 GPT-4 代码理解能力的 AI 编程助手，帮助您从基础到高级全面掌握使用方法。
 ---
